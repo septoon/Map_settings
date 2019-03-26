@@ -13,6 +13,10 @@ class Settings {
     return this.defaultSettings;
   }
 
+  get runUserSettings() {
+    return this._settings;
+  }
+
   set theme(selectTheme) {
     if (this._settings.get('theme').has(selectTheme)) this.defaultSettings.set('theme', selectTheme);
   }

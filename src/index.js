@@ -2,6 +2,7 @@ import Settings from './js/Settings';
 /* eslint-disable no-console */
 const userSettings = new Settings();
 
+console.log(userSettings.runUserSettings);
 console.log(userSettings.runSettings);
 
 userSettings.theme = 'gray';

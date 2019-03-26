@@ -23,3 +23,12 @@ test('my second settings', () => {
   const expected = new Map([['theme', 'light'], ['music', 'chillout'], ['difficulty', 'hard']]);
   expect(received.runSettings).toEqual(expected);
 });
+
+test('my third settings', () => {
+  const received = new Settings();
+  received.theme = 'dark';
+  received.music = 'off';
+  received.difficulty = 'nightmare';
+  const expected = new Map([['theme', 'dark'], ['music', 'off'], ['difficulty', 'nightmare']]);
+  expect(received.runSettings).toEqual(expected);
+});
